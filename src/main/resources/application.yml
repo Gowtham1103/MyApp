@@ -1,0 +1,7 @@
+spring:
+  data:
+    mongodb:
+      uri:  mongodb://mongo:fGwSayIMkuLKbgCafTJZZqgxtzhNrGip@viaduct.proxy.rlwy.net:10945
+      database: myapp
+      host: mongo-db-backend
+      port: 27017

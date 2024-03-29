@@ -7,6 +7,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/highlight")
+@CrossOrigin("*")
 public class HighlightsController {
     @Autowired
     private HighlightsService highlightsService;

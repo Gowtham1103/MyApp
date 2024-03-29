@@ -7,6 +7,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/mobile")
+@CrossOrigin("*")
 public class MobileController {
 
     @Autowired

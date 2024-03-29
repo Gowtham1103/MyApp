@@ -1,4 +1,4 @@
-package com.redweber.backendservice.product;
+package com.redweber.backendservice.product.computer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/computer")
 @CrossOrigin("*")
 public class ProductController {
     @Autowired

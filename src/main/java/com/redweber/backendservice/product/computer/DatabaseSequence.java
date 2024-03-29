@@ -1,4 +1,4 @@
-package com.redweber.backendservice.product;
+package com.redweber.backendservice.product.computer;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.redweber.backendservice.product;
+package com.redweber.backendservice.product.computer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Update;

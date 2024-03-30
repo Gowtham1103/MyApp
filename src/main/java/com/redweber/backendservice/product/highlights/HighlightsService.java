@@ -63,6 +63,9 @@ public class HighlightsService {
         if (Objects.nonNull(data.getStatus()) && !"".equalsIgnoreCase(data.getStatus())) {
             existingData.setStatus(data.getStatus());
         }
+        if (Objects.nonNull(data.getImage_URL()) && !"".equalsIgnoreCase(data.getImage_URL())) {
+            existingData.setImage_URL(data.getImage_URL());
+        }
 
         highlightsRepository.save(existingData);
         return "Data Updated Successfully!";

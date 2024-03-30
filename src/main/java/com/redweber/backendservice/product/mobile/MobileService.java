@@ -75,7 +75,10 @@ private MobileRepository mobileRepository;
         }
         if (Objects.nonNull(data.getStatus()) && !"".equalsIgnoreCase(data.getStatus())) {
             existingData.setStatus(data.getStatus());
-    }
+        }
+        if (Objects.nonNull(data.getStatus()) && !"".equalsIgnoreCase(data.getStatus())) {
+            existingData.setStatus(data.getStatus());
+        }
         mobileRepository.save(existingData);
         return "Data Updated Successfully!";
     }

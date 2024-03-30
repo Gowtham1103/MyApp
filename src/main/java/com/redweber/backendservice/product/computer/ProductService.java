@@ -65,6 +65,9 @@ public class ProductService {
         if (Objects.nonNull(data.getStatus()) && !"".equalsIgnoreCase(data.getStatus())) {
             existingData.setStatus(data.getStatus());
         }
+        if (Objects.nonNull(data.getStatus()) && !"".equalsIgnoreCase(data.getStatus())) {
+            existingData.setStatus(data.getStatus());
+        }
 
         productRepository.save(existingData);
         return "Data Updated Successfully!";

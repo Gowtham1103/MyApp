@@ -13,7 +13,7 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    private BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+    private BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder(); 
 
     public ResponseEntity<?> signUp(User credentials) {
         if (userRepository.existsByUsername(credentials.getUsername())) {

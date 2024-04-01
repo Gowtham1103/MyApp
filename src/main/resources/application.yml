@@ -1,7 +1,19 @@
 spring:
   data:
     mongodb:
-      uri:  mongodb://mongo:fGwSayIMkuLKbgCafTJZZqgxtzhNrGip@viaduct.proxy.rlwy.net:10945
-      database: myapp
+      uri: mongodb://mongo:fGwSayIMkuLKbgCafTJZZqgxtzhNrGip@viaduct.proxy.rlwy.net:10945/myapp
       host: mongo-db-backend
       port: 27017
+      database: myapp
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: gowtham19.bm@gmail.com
+    password: dyfwnlkoqwddbwro
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable:

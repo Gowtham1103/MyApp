@@ -26,7 +26,7 @@ public class EmailService {
                 "If you have any questions or feedback, feel free to reach out to us anytime.\n" +
                 "\n" +
                 "Best regards,\n" +
-                ":)");
+                ":) .");
 
         try {
             emailSender.send(message);

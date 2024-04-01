@@ -6,14 +6,3 @@ spring:
       port: 27017
       database: myapp
 
-  mail:
-    host: smtp.gmail.com
-    port: 587
-    username: gowtham19.bm@gmail.com
-    password: dyfwnlkoqwddbwro
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable:

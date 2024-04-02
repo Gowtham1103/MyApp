@@ -1,8 +1,19 @@
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://root:log2017g@cluster0.zoetehw.mongodb.net/myapp
+      uri: mongodb://mongo:VqoElRTUAaiTIcvzsrnnOepNmRNyPrbp@monorail.proxy.rlwy.net:35796/
       host: mongo-db-backend
       port: 27017
       database: myapp
 
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: gowtham19.bm@gmail.com
+    password: dyfwnlkoqwddbwro
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable:

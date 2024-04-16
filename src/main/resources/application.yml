@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://mongo:VqoElRTUAaiTIcvzsrnnOepNmRNyPrbp@monorail.proxy.rlwy.net:35796/
+      uri: mongodb://mongo:RHIvUbKurcpJRpRoEmtYtgLXxxQQQETc@monorail.proxy.rlwy.net:14734/
       host: mongo-db-backend
       port: 27017
       database: myapp

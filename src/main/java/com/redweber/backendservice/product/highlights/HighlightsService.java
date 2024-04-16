@@ -17,18 +17,14 @@ import static org.springframework.data.mongodb.core.query.Query.query;
 public class HighlightsService {
     @Autowired
     private MongoOperations mongoOperations;
-
     @Autowired
     private HighlightsRepository highlightsRepository;
-
     public long generateSequence(String seqName) {
         DatabaseSequence counter = mongoOperations.findAndModify(query(where("_id").is(seqName)),
                 new Update().inc("seq",1), options().returnNew(true).upsert(true),
                 DatabaseSequence.class);
         return !Objects.isNull(counter) ? counter.getSeq() : 1;
     }
-
-
     public List<Highlights> getProducts() {
         return highlightsRepository.findAll();
     }
@@ -36,18 +32,15 @@ public class HighlightsService {
     public Highlights getProductById(Long productId) {
         return highlightsRepository.findById(productId).get();
     }
-
     public ResponseEntity<String> deleteById(Long productId) {
         highlightsRepository.deleteById(productId);
         return ResponseEntity.ok("Data deleted successfully !");
     }
-
     public String updateProductById(Long productId, Highlights data) {
         Highlights existingData = highlightsRepository.findById(productId).orElse(null);
         if (existingData == null) {
             return "Product not found";
         }
-
         if (Objects.nonNull(data.getTitle()) && !"".equalsIgnoreCase(data.getTitle())) {
             existingData.setTitle(data.getTitle());
         }
@@ -70,7 +63,6 @@ public class HighlightsService {
         highlightsRepository.save(existingData);
         return "Data Updated Successfully!";
     }
-
     public Highlights addHighlight(Highlights products) {
         Highlights userDb = new Highlights();
         userDb.setId(generateSequence(Highlights.SEQUENCE_NAME));

@@ -8,6 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin("https://dinezzzzz.github.io/copy/")
 public class EnquiryController {
     @Autowired
     private EnquiryService enquiryService;
